@@ -16,15 +16,5 @@
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
-    <remote-repository>
-      <option name="id" value="virtual-release" />
-      <option name="name" value="Artifactory-releases" />
-      <option name="url" value="https://globaldevtools.bbva.com/artifactory-api/repository-cib-app/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="virtual-snapshot" />
-      <option name="name" value="Artifactory-releases" />
-      <option name="url" value="https://globaldevtools.bbva.com/artifactory-api/repository-cib-app/" />
-    </remote-repository>
   </component>
 </project>
