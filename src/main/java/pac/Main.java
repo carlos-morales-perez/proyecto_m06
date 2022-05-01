@@ -14,6 +14,10 @@ public class Main {
         Session s = sf.openSession();
 
         System.out.println("Conexion a la BBDD configurada.");
+        
+        s.close();
+        sf.close();
+        System.out.println("Cerrada la BBDD.");
     }
 }
 
