@@ -1,14 +1,14 @@
 package pac;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
 import java.io.Serializable;
 
 public class Profesor implements Serializable {
-
-    Long id;
-    String nombre;
-    String sexo;
+	
+	private static final long serialVersionUID = 1L;
+	
+    private Long id;
+    private String nombre;
+    private String sexo;
 
     public Profesor(Long id, String nombre, String sexo) {
         this.id = id;

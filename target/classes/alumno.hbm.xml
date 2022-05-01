@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="pac">
-    <class name="Alumno" table="Alumnos" catalog="m06">
+    <class name="Alumno" table="alumnos" catalog="m06">
         <id name="id" type="long">
             <column name="idAlumno"/>
             <generator class="increment"/>
@@ -11,5 +11,11 @@
         <property name="nacionalidad"/>
         <property name="edad" type="int"/>
         <property name="sexo"/>
+        <set name="modulos" table="alumno_modulo">
+            <key>
+            	<column name="idAlumno"/>
+            </key>
+            <many-to-many column="idModulo" class="pac.Modulo"/>
+        </set>
     </class>
 </hibernate-mapping>

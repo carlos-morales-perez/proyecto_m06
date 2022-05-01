@@ -13,7 +13,7 @@ public class Main {
         SessionFactory sf = cfg.buildSessionFactory(new StandardServiceRegistryBuilder().configure().build());
         Session s = sf.openSession();
 
-        System.out.println("Conexión a la BBDD configurada.");
+        System.out.println("Conexion a la BBDD configurada.");
     }
 }
 

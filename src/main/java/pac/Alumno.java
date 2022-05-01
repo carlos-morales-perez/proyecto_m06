@@ -1,26 +1,32 @@
 package pac;
 
-import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Set;
 
 public class Alumno implements Serializable {
 
-    Long id;
-    String nombre;
-    String nacionalidad;
-    int edad;
-    String sexo;
+	private static final long serialVersionUID = 1L;
+	
+	private Long id;
+    private String nombre;
+    private String nacionalidad;
+    private int edad;
+    private String sexo;
+    Set<Modulo> modulos = new HashSet<>();
 
-    public Alumno(Long id, String nombre, String nacionalidad, int edad, String sexo) {
-        this.id = id;
-        this.nombre = nombre;
-        this.nacionalidad = nacionalidad;
-        this.edad = edad;
-        this.sexo = sexo;
-    }
+    
 
-    public Alumno() {
+    public Alumno(Long id, String nombre, String nacionalidad, int edad, String sexo, Set<Modulo> modulos) {
+		this.id = id;
+		this.nombre = nombre;
+		this.nacionalidad = nacionalidad;
+		this.edad = edad;
+		this.sexo = sexo; 
+		this.modulos = modulos;
+	}
+
+	public Alumno() {
     }
 
     public Long getId() {
@@ -63,6 +69,14 @@ public class Alumno implements Serializable {
         this.sexo = sexo;
     }
 
+    public Set<Modulo> getModulos() {
+        return modulos;
+    }
+
+    public void setModulos(Set<Modulo> modulos) {
+        this.modulos = modulos;
+    }
+
     @Override
     public String toString() {
         return "Alumno{" +
@@ -71,6 +85,7 @@ public class Alumno implements Serializable {
                 ", nacionalidad='" + nacionalidad + '\'' +
                 ", edad=" + edad +
                 ", sexo='" + sexo + '\'' +
+                ", modulos=" + modulos +
                 '}';
     }
 }

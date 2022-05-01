@@ -1,14 +1,14 @@
 package pac;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
 import java.io.Serializable;
 
 public class Modulo implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 
-    Long id;
-    String nombre;
-    String codigo;
+    private Long id;
+    private String nombre;
+    private String codigo;
 
     public Modulo(Long id, String nombre, String codigo) {
         this.id = id;
