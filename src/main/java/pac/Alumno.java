@@ -15,10 +15,7 @@ public class Alumno implements Serializable {
     private String sexo;
     Set<Modulo> modulos = new HashSet<>();
 
-    
-
-    public Alumno(Long id, String nombre, String nacionalidad, int edad, String sexo, Set<Modulo> modulos) {
-		this.id = id;
+    public Alumno(String nombre, String nacionalidad, int edad, String sexo, Set<Modulo> modulos) {
 		this.nombre = nombre;
 		this.nacionalidad = nacionalidad;
 		this.edad = edad;

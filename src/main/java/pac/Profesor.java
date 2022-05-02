@@ -10,8 +10,7 @@ public class Profesor implements Serializable {
     private String nombre;
     private String sexo;
 
-    public Profesor(Long id, String nombre, String sexo) {
-        this.id = id;
+    public Profesor(String nombre, String sexo) {
         this.nombre = nombre;
         this.sexo = sexo;
     }

@@ -10,8 +10,7 @@ public class Modulo implements Serializable {
     private String nombre;
     private String codigo;
 
-    public Modulo(Long id, String nombre, String codigo) {
-        this.id = id;
+    public Modulo(String nombre, String codigo) {
         this.nombre = nombre;
         this.codigo = codigo;
     }

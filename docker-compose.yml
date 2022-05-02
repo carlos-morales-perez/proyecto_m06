@@ -7,7 +7,7 @@ services:
     environment:
       MYSQL_DATABASE: m06
       MYSQL_USER: ilerna
-      MYSQL_PASSWORD: ilerna_1234
+      MYSQL_PASSWORD: Ilerna_1234
       MYSQL_ROOT_PASSWORD: patatasada
     ports:
       - '3306:3306'
